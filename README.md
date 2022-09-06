@@ -2,7 +2,6 @@
 
 For steps on how to work with this repository [please see here](https://bloomtechlabs.gitbook.io/labs-spa-starter/)
 
-
 # Urban Pathways
 
 You can find the deployed project at [🚫URL NAME GOES HERE](🚫copy and paste URL here).
@@ -12,10 +11,7 @@ You can find the deployed project at [🚫URL NAME GOES HERE](🚫copy and paste
 ![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
 
 
-- Fork and clone the repo to install it as your own remote.
-  - **note** please [be sure to set your remote](https://help.github.jp/enterprise/2.11/user/articles/changing-a-remote-s-url/) for this repo to point to your Labs Team Front End Repository.
-- run: `npm install` to download all dependencies.
-- run: `npm start` to start your local development server.
+[Local Setup Instructions](https://bloomtech.notion.site/Local-Setup-Guide-5a4bfa0d683e4034846a6a851a4e4ef5)
 
 > When using Okta for authentication, the app will need to run locally on port 3000.
 
