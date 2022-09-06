@@ -80,7 +80,7 @@
     "format": "prettier --write 'src/**/*.{js,jsx,css,scss}'",
     "lint": "eslint 'src/**/*.{js,jsx}'",
     "prettier": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
-    "start": "craco --max_old_space_size=4096 start",
+    "start": "node start.js",
     "test": "craco test --env=jest-environment-jsdom-sixteen"
   },
   "version": "0.1.0"
