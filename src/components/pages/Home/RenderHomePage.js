@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../../common';
 
+import { Button as Mybutton } from 'antd';
+// import 'antd/dist/antd.less';
+import '../../../styles/app.less';
+
 function RenderHomePage(props) {
   const { userInfo, authService } = props;
   return (
@@ -28,6 +32,10 @@ function RenderHomePage(props) {
           />
         </p>
       </div>
+      <Mybutton className="my-btn">
+        test button Ant overwrite custome theme
+      </Mybutton>
+      <Mybutton className="">test button Ant just custome theme </Mybutton>
     </div>
   );
 }
