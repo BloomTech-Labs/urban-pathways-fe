@@ -29,7 +29,8 @@
     "react-dom": "^16.13.1",
     "react-plotly.js": "^2.4.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.0"
+    "react-scripts": "^4.0.0",
+    "s3": "^4.4.0"
   },
   "devDependencies": {
     "@testing-library/dom": "^8.11.3",
