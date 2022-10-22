@@ -13,6 +13,9 @@ function RenderHomePage(props) {
           approach components.
         </p>
         <p>
+          <Link to="/upload">Upload Files</Link>
+        </p>
+        <p>
           <Link to="/profile-list">Profiles Example</Link>
         </p>
         <p>
