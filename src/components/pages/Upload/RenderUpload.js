@@ -16,7 +16,7 @@ function upload(e) {
       console.log(data.location);
     })
     .catch(err => {
-      alert(err);
+      console.log(err);
     });
 }
 
