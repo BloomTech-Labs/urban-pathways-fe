@@ -5,15 +5,15 @@ import theKeys from '../../../.keys';
 const config = {
   bucketName: 'bucketeer-0fcbcf8b-2b04-4ddb-ac9d-29c05b9d4990',
   region: 'us-east-1',
-  accessKeyId: theKeys.accessKeyId,
-  secretAccessKey: theKeys.secretAccessKey,
+  accessKeyId: theKeys.keyId,
+  secretAccessKey: theKeys.secret,
 };
-
+console.log(config);
 function upload(e) {
   console.log(e.target.files[0]);
   uploadFile(e.target.files[0], config)
     .then(data => {
-      console.log(data);
+      console.log(data.location);
     })
     .catch(err => {
       alert(err);
