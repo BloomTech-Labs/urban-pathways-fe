@@ -1,6 +1,7 @@
 import React from 'react';
 
 function upload(e) {
+  e.preventDefault();
   console.log(e.target.files[0]);
   console.log(Date.now());
 }
