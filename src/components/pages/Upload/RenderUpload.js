@@ -1,10 +1,15 @@
 import React from 'react';
-import axios from 'axios';
-import getSignedURL from '../../../api/index';
+import { getSignedURL } from '../../../api/index';
 
 function upload(e) {
   e.preventDefault();
-  console.log(getSignedURL);
+  getSignedURL()
+    .then(res => {
+      console.log(res.data);
+    })
+    .catch(err => {
+      console.log(err);
+    });
   console.log(e.target.files[0]);
   console.log(Date.now());
 }

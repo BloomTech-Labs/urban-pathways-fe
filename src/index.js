@@ -19,7 +19,7 @@ import { LandingPage } from './components/pages/Landing';
 import { ExampleDataViz } from './components/pages/ExampleDataViz';
 import { config } from './utils/oktaConfig';
 import { LoadingComponent } from './components/common';
-import { UploadPage } from './components/pages/Upload';
+import { UploadPage } from './components/pages/Upload/Index';
 
 ReactDOM.render(
   <Router>

@@ -51,7 +51,7 @@ const getProfileData = authState => {
 const getSignedURL = () => {
   try {
     return axios
-      .post(process.env.REACT_APP_API_URI / getSignedURL)
+      .get(`${process.env.REACT_APP_API_URI}/report/getSignedURL`)
       .then(res => JSON.parse(res.data))
       .catch(err => err);
   } catch (err) {
