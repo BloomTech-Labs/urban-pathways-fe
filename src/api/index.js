@@ -48,5 +48,15 @@ const getProfileData = authState => {
     });
   }
 };
+const getSignedURL = () => {
+  try {
+    return axios
+      .post(process.env.REACT_APP_API_URI / getSignedURL)
+      .then(res => JSON.parse(res.data))
+      .catch(err => err);
+  } catch (err) {
+    console.log(err);
+  }
+};
 
-export { sleep, getExampleData, getProfileData, getDSData };
+export { sleep, getExampleData, getProfileData, getDSData, getSignedURL };
