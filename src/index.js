@@ -7,6 +7,9 @@ import {
   Switch,
 } from 'react-router-dom';
 import { Security, LoginCallback, SecureRoute } from '@okta/okta-react';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+import 'antd';
 
 import 'antd/dist/antd.less';
 
@@ -19,6 +22,7 @@ import { LandingPage } from './components/pages/Landing';
 import { ExampleDataViz } from './components/pages/ExampleDataViz';
 import { config } from './utils/oktaConfig';
 import { LoadingComponent } from './components/common';
+import { ModalExample } from './components/pages/ModalExample';
 
 ReactDOM.render(
   <Router>
@@ -55,6 +59,7 @@ function App() {
         <SecureRoute path="/example-list" component={ExampleListPage} />
         <SecureRoute path="/profile-list" component={ProfileListPage} />
         <SecureRoute path="/datavis" component={ExampleDataViz} />
+        <SecureRoute path="/example-modal" component={ModalExample} />
         <Route component={NotFoundPage} />
       </Switch>
     </Security>
